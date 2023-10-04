@@ -41,7 +41,7 @@
     for (let i = 0; i < listOf_offers.length; i++) {
       const offer = listOf_offers[i];
       const offer_class = offer.getAttribute("class");
-      if (offer_class === country) {
+      if (offer_class !== country) {
         offer.innerHTML = "";
         // continue;
       }
